@@ -1,0 +1,129 @@
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+}
+
+.h1 {
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 71px;
+}
+
+.h2 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 61px;
+}
+
+.h3 {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.h4 {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.h5 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+}
+
+.h6 {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 34px;
+}
+
+.h7 {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.h8 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+/*
+NAV
+ */
+
+nav {
+    background-color: white;
+    min-height: 105px;
+}
+
+.nav-link {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #000000;
+}
+
+/*
+HEADER
+ */
+
+.header {
+    background-color: #2ECC71;
+    color: white;
+}
+
+.header button {
+    width: 255px;
+    height: 56px;
+    text-align: center;
+}
+
+.content {
+    position: relative;
+    height: 769px;
+}
+
+
+.header img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.images {
+    position: relative;
+}
+
+.phone {
+    position: absolute;
+    top: -35px;
+}
+
+.phone-shadow {
+    background: rgba(7, 35, 19, 1);
+    filter: blur(100px);
+    transform: rotate(60deg);
+    width: 159.51px;
+    height: 422.68px;
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+}
+
+/*
+What Are Digital Securities?
+ */
+
+.card {
+    border: none;
+    width: 350px;
+}
