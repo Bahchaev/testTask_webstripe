@@ -140,3 +140,20 @@ What Are Digital Securities?
     background-color: #2ECC71;
     border-radius: 10px;
 }
+
+/*
+Digital Assets
+ */
+.digital-assets {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+@media screen  and (max-width: 768px){
+    .digital-assets {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
