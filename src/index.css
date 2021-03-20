@@ -157,3 +157,28 @@ Digital Assets
         line-height: 30px;
     }
 }
+
+/*
+Products
+ */
+
+.btn-launchpad {
+    height: 78px;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #252525;
+    border-radius: 10px;
+}
+
+.btn-marketplace {
+    height: 78px;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #2ECC71;
+    border-radius: 10px;
+    color: #2ECC71
+}
