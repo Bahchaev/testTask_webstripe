@@ -127,3 +127,16 @@ What Are Digital Securities?
     border: none;
     width: 350px;
 }
+
+.email-form input {
+    max-width: 455px;
+    height: 47px;
+    border-radius: 10px;
+}
+
+.email-form button {
+    min-width: 255px;
+    height: 47px;
+    background-color: #2ECC71;
+    border-radius: 10px;
+}
