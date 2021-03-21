@@ -68,12 +68,14 @@ nav {
 .navbar {
     justify-content: center;
     min-height: 105px;
+    padding: 23px 0
 }
 
 .navbar-toggler {
     border: none;
     position: absolute;
     left: 0;
+    top:33px;
 }
 
 .navbar-toggler-icon {
@@ -90,6 +92,10 @@ nav {
     background-color: #2ECC71;
 }
 
+.navbar-brand img {
+    width: 179px;
+    height: 51px
+}
 
 @media screen  and (max-width: 575px){
     .navbar-brand img {
@@ -163,6 +169,21 @@ What Are Digital Securities?
 .card {
     border: none;
     width: 350px;
+}
+
+.card-1-image {
+    width: 250px;
+    height: 330px;
+}
+
+.card-2-image {
+    width: 332px;
+    height: 334px;
+}
+
+.card-3-image {
+    width: 306px;
+    height: 340px;
 }
 
 .email-form input {
