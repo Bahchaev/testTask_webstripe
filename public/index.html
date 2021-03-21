@@ -24,22 +24,30 @@
 
 <!-- NAVBAR -->
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-xl navbar-light">
-        <div class="container">
-            <a class="navbar-brand mr-3" href="#">
-                <img src="../src/assets/Equiteez.svg" alt="logo" width="179" height="51">
-            </a>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-xl navbar-light">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <div class="toggler-rect"></div>
+                    <div class="toggler-rect"></div>
+                    <div class="toggler-rect"></div>
+                </span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
-                <ul class="navbar-nav">
+            <a class="navbar-brand pt-1 pb-1" href="#">
+                <img src="../src/assets/Equiteez.svg" alt="logo" width="179" height="51">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">What Are Digital Securities?</a>
+                        <a class="nav-link active" aria-current="page" href="#What Are Digital Securities?">
+                            What Are Digital Securities?
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
+                        <a class="nav-link" href="#Products">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Digitize Your Business</a>
@@ -51,19 +59,19 @@
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav flex-row flex-wrap">
+                <ul class="navbar-nav flex-row flex-wrap social">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <a class="nav-link active pe-2" aria-current="page" href="#">
                             <img src="../src/assets/Twitter%20(Traced).svg" alt="twitter">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link pe-2" href="#">
                             <img src="../src/assets/Facebook%20(Traced).svg" alt="facebook">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link pe-2" href="#">
                             <img src="../src/assets/Linkedin (Traced).svg" alt="linkedin">
                         </a>
                     </li>
@@ -74,30 +82,49 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
+
+        </nav>
+    </div>
 </div>
 
 <!-- HEADER -->
-<header class="container-fluid header">
-    <div class="container content">
-        <div class="row h-100 ">
-            <div class="col-6 ">
-                <div class="h1">Private Equity Made Easy</div>
-                <div class="h4">Equiteez is on a mission to make private equity easily accesible to all in vestors</div>
-                <button type="button" class="btn btn-dark h8">Singnup For Free</button>
+<header class="container-fluid header overflow-hidden">
+    <div class="container content position-relative">
+        <div class="row h-100 d-flex flex-column
+        align-items-center align-items-md-start
+        justify-content-between justify-content-md-center">
+            <div class="header-title h1 mb-4
+            col-10 col-md-8
+            text-center text-md-start">
+                Private Equity Made Easy
             </div>
-            <div class="col-6 images">
-                <div class="phone-shadow"></div>
-                <img src="../src/assets/mobile-header.svg" alt="" class="phone">
+
+            <div>
+                <div class="header-text h4 m-auto ms-md-0 me-md-0 mb-3 mt-3 mb-md-4
+                col-10 col-md-6 text-center text-md-start ">
+                    Equiteez is on a mission to make private equity easily accesible to all in
+                    vestors
+                </div>
+                <div class="col-10 col-sm-8 col-md-4 col-lg-3
+                m-auto m-md-0 pt-md-3">
+                    <button type="button" class="btn btn-dark h8 w-100">
+                        Singnup For Free
+                    </button>
+                </div>
             </div>
         </div>
+
+        <img src="../src/assets/mobile-header.svg"
+             alt=""
+             class="phone position-absolute"
+        >
     </div>
 </header>
 
 <!-- What Are Digital Securities? -->
+<a name="What Are Digital Securities?"></a>
 <div class="container-fluid">
-    <div class="container-lg pt-4 pb-4">
+    <div class="container pt-4 pb-4">
         <div class="h2 text-center mb-4">
             What Are Digital Securities?
         </div>
@@ -144,25 +171,27 @@
                 </div>
             </div>
         </div>
-        <!-- TODO: отцентровать фарму ввода Email -->
-        <form class="email-form">
-            <div class="row d-flex justify-content-center align-items-center">
 
-                <div class="col-10 d-flex flex-wrap justify-content-center">
+        <form class="email-form">
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-sm-6 col-md-5 mb-3">
                     <input
                             type="email"
                             class="form-control"
                             id="exampleInputPassword1"
                             placeholder="E-mail"
                     >
-
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
                     <button
                             type="submit"
-                            class="btn btn-primary border"
+                            class="btn btn-primary border w-100"
                     >
                         Get Early Access
                     </button>
                 </div>
+
 
             </div>
         </form>
@@ -170,6 +199,7 @@
 </div>
 
 <!-- Digital Assets -->
+
 <div class="container-fluid" style="background-color: #252525;">
     <div class="container">
         <div
@@ -185,41 +215,36 @@
 </div>
 
 <!-- Products -->
-
-<div class="container-fluid pt-5">
-    <div class="container-lg">
-        <div class="row">
-            <div class="h2">Product</div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-6">
-                <div class="row h-100 d-flex flex-column justify-content-evenly align-items-center">
-                    <div class="col-7">
-                        <div class="btn btn-outline-dark h4 w-100 btn-launchpad">
-                            Launchpad
-                        </div>
-                        <div class="h7 w-100 text-center">
-                            Help launch startups & fund private bussinesses
-                        </div>
+<a name="Products"></a>
+<div class="container pt-5">
+    <diw class="row d-flex justify-content-center justify-content-md-start">
+        <div class="h2 col-12 col-sm-8">Product</div>
+    </diw>
+    <div class="row d-flex justify-content-around">
+        <div class="col-12 col-sm-8 col-md-4">
+            <div class="row h-100 d-flex flex-column justify-content-evenly align-items-center">
+                <div class="launchpad mt-1 mb-1">
+                    <button class="btn btn-outline-dark h4 w-100">
+                        Launchpad
+                    </button>
+                    <div class="h7 w-100 text-center">
+                        Help launch startups & fund private bussinesses
                     </div>
+                </div>
 
-                    <div class="col-7">
-                        <div class="btn btn-outline-primary h4 w-100 btn-marketplace">
-                            Marketplace
-                        </div>
-                        <div class="h7 w-100 text-center">
-                            Browse through stocks on sale from private investors
-                        </div>
+                <div class="marketplace mt-3 mb-3">
+                    <button class="btn btn-outline-primary h4 w-100">
+                        Marketplace
+                    </button>
+                    <div class="h7 w-100 text-center">
+                        Browse through stocks on sale from private investors
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6">
-                <div class="row justify-content-center">
-                    <img src="../src/assets/mobile.svg" alt="mobile" width="348" height="667">
-                </div>
-            </div>
         </div>
-
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+            <img src="../src/assets/mobile.svg" alt="mobile">
+        </div>
     </div>
 </div>
 

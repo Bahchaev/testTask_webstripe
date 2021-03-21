@@ -5,6 +5,10 @@ body {
     font-style: normal;
 }
 
+.container {
+    max-width: 1140px;
+}
+
 .h1 {
     font-weight: bold;
     font-size: 52px;
@@ -59,8 +63,41 @@ NAV
 
 nav {
     background-color: white;
+}
+
+.navbar {
+    justify-content: center;
     min-height: 105px;
 }
+
+.navbar-toggler {
+    border: none;
+    position: absolute;
+    left: 0;
+}
+
+.navbar-toggler-icon {
+    background: none !important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.toggler-rect {
+    height: 4px;
+    width: 30px;
+    background-color: #2ECC71;
+}
+
+
+@media screen  and (max-width: 575px){
+    .navbar-brand img {
+        width: 146px;
+        height: 39px;
+    }
+}
+
 
 .nav-link {
     font-family: Open Sans, sans-serif;
@@ -72,6 +109,7 @@ nav {
     color: #000000;
 }
 
+
 /*
 HEADER
  */
@@ -82,43 +120,42 @@ HEADER
 }
 
 .header button {
-    width: 255px;
-    height: 56px;
     text-align: center;
+    height: 56px;
+    border-radius: 10px;
 }
 
 .content {
     position: relative;
     height: 769px;
-}
-
-
-.header img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.images {
-    position: relative;
+    padding: 7px 0 37px;
+    z-index: 1;
 }
 
 .phone {
-    position: absolute;
+    right: -200px;
     top: -35px;
+    z-index: -1;
 }
 
-.phone-shadow {
-    background: rgba(7, 35, 19, 1);
-    filter: blur(100px);
-    transform: rotate(60deg);
-    width: 159.51px;
-    height: 422.68px;
-    position: absolute;
-    right: 150px;
-    bottom: 0;
-}
+@media screen and (max-width: 767px) {
+    .header-title {
+        font-size: 35px;
+        line-height: 40px;
+    }
 
+    .header-text {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .phone {
+        height: 644px;
+        width: 625px;
+        top: 10px;
+    }
+}
 /*
 What Are Digital Securities?
  */
@@ -129,13 +166,11 @@ What Are Digital Securities?
 }
 
 .email-form input {
-    max-width: 455px;
     height: 47px;
     border-radius: 10px;
 }
 
 .email-form button {
-    min-width: 255px;
     height: 47px;
     background-color: #2ECC71;
     border-radius: 10px;
@@ -161,23 +196,19 @@ Digital Assets
 /*
 Products
  */
-
-.btn-launchpad {
-    height: 78px;
-    max-width: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid #252525;
-    border-radius: 10px;
+.launchpad,
+.marketplace {
 }
 
-.btn-marketplace {
+.launchpad button {
     height: 78px;
-    max-width: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: 5px solid #252525;
+    border-radius: 10px;
+
+}
+
+.marketplace button {
+    height: 78px;
     border: 5px solid #2ECC71;
     border-radius: 10px;
     color: #2ECC71
